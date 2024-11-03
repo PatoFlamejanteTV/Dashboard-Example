@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Painel de Controle
+    link(rel="stylesheet" href="styles.css")
+  body
+    .dashboard
+      aside.sidebar
+        h2 Dashboard
+        ul.nav
+          li: a(href="#") Visão Geral
+          li: a(href="#") Usuários
+          li: a(href="#") Vendas
+          li: a(href="#") Configurações
+      main.content
+        header
+          h1 Painel de Estatísticas
+          button#refresh-btn Atualizar Dados
+        section.charts
+          .chart-container
+            h2 Usuários por Mês
+            canvas#userChart
+          .chart-container
+            h2 Vendas Anuais
+            canvas#salesChart
+    script(src="script.js")

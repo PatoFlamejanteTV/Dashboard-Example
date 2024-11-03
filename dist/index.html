@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Painel de Controle</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <ul class="nav">
+          <li><a href="#">Visão Geral</a></li>
+          <li><a href="#">Usuários</a></li>
+          <li><a href="#">Vendas</a></li>
+          <li><a href="#">Configurações</a></li>
+        </ul>
+      </aside>
+      <main class="content">
+        <header>
+          <h1>Painel de Estatísticas</h1>
+          <button id="refresh-btn">Atualizar Dados</button>
+        </header>
+        <section class="charts">
+          <div class="chart-container">
+            <h2>Usuários por Mês</h2>
+            <canvas id="userChart"></canvas>
+          </div>
+          <div class="chart-container">
+            <h2>Vendas Anuais</h2>
+            <canvas id="salesChart"></canvas>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
